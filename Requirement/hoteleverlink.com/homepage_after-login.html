@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - HotelEverlink</title>
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+	<meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
+    <meta content="Jim Fernando" name="author">
+
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="images/touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/touch-icon-ipad-retina.png">
+
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<div class="header">
+	<div class="header-top header-top-short has-shadow">
+		<div class="container">
+			<a class="navbar-brand" href="#" title="HotelEverlink"><img src="images/logo.png" alt=""></a>
+			<div class="header-nav">
+				<nav class="navbar navbar-default">
+					<div class="navbar-header"> <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
+						<span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+					</div>
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul id="nav" class="nav navbar-nav">
+							<li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><span class="navi-lugage"></span>Manage Booking<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Booking History</a></li>
+									<li><a href="#">Booking Plans</a></li>
+									<li><a href="#">Saved Booking</a></li>
+									<li><a href="#">Retrieve Booking</a></li>
+								</ul>
+							</li>
+							<li><a href="#"><span class="navi-account"></span>Account Information</a></li>
+							<li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><span class="navi-lang lang-en"></span>Eng<span class="caret"></span></a>
+								<ul class="dropdown-menu dropdown-menu-lang">
+									<li class="active"><a href="#"><span class="navi-lang lang-en"></span>English</a></li>
+									<li><a href="#"><span class="navi-lang lang-gr"></span>Germany</a></li>
+									<li><a href="#"><span class="navi-lang lang-fr"></span>French</a></li>
+									<li><a href="#"><span class="navi-lang lang-sp"></span>Spanich</a></li>
+								</ul>
+							</li>
+							<li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><span class="navi-currency"></span>USD<span class="caret"></span></a>
+								<ul class="dropdown-menu dropdown-menu-currency">
+									<li class="active"><a href="#"><span>$</span>U.S. Dollar</a></li>
+									<li><a href="#"><span>&euro;</span>Euros</a></li>
+									<li><a href="#"><span>&pound;</span>British Pound</a></li>
+									<li><a href="#"><span>&yen;</span>Japenese Yen</a></li>
+									<li><a href="#"><span>HK$</span>Hong Kong Dollar</a></li>
+									<li><a href="#"><span>CN&yen;</span>Chinese Yuan</a></li>
+								</ul>
+							</li>
+							<li class="dropdown active"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><span class="user-profile"><img src="images/anonymous.png" alt=""></span>Andrew David<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">My Account</a></li>
+									<li><a href="#">Messages <span class="badge">2</span></a></li>
+									<li><a href="#">Settings</a></li>
+									<li><a href="#">Help Center</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Sign Out</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Contents -->
+<div class="content">
+
+	<section class="section_hero hero_home_search">
+		<div class="container">
+			<div class="hero-content">
+				<h1>Welcome to Our Hotereverlink agencies</h1>
+				<h3>Provide Hotel Booking Service for Travel Agencies</h3>
+				<div class="form-search">
+					<form method="post" action="">
+						<div class="row gutter7">
+							<div class="col-md-8">
+								<div class="form-group">
+									<label for="destination">Where do you want to go?</label>
+									<div class="has-icon">
+										<span class="icon-pushpin"></span>
+										<input type="text" class="form-control" name="" placeholder="City or Destinations">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label>Nationality</label>
+									<div class="dropdown dropdown-lang has-selector">
+										<span class="lang-en lang-active"></span>
+										<input type="text" class="form-control dropdown-toggle" name="" placeholder="United Kingdom" data-toggle="dropdown">
+										<div class="dropdown-menu">
+											<ul>
+												<li class="lang-en active">English</li>
+												<li class="lang-gr">Germany</li>
+												<li class="lang-fr">French</li>
+												<li class="lang-sp">Spanich</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row gutter7">
+							<div class="col-md-2">
+								<div class="form-group">
+									<label>Checkin</label>
+									<div class="has-icon">
+										<span class="icon-calendar"></span>
+										<input type="text" class="form-control" id="dateCheckin" name="" placeholder="dd/mm/yy">
+										<div class="calendardaten"></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="form-group">
+									<label>Checkout</label>
+									<div class="has-icon">
+										<span class="icon-calendar"></span>
+										<input type="text" class="form-control" id="dateCheckout" name="" placeholder="dd/mm/yy">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-5">
+								<div class="form-group">
+									<label>Room, Adults (18+), Children (0-12)</label>
+									<div class="dropdown dropdown-room has-selector">
+										<span class="lang-en lang-active"></span>
+										<a href="#" class="form-control dropdown-toggle">2 Rooms, 2 Adults, 2 Children</a>
+										<div class="dropdown-menu">
+											<div class="form-group-qty clearfix">
+												<label>Room</label>
+												<div id="controlQty" class="input-group">
+													<div class="input-group-btn">
+														<button type="button" class="btn btn-min"></button>
+													</div>
+													<input type="text" class="form-control" value="1">
+													<div class="input-group-btn">
+														<button type="button" class="btn btn-plus"></button>
+													</div>
+												</div>
+											</div>
+											<ul class="form-group-room">
+												<li>
+													<div class="form-group-room-title">ROOM 1</div>
+													<div class="form-group">
+														<label>Room Type</label>
+														<select class="selector" style="width:100%;">
+															<option value="">Single</option>
+															<option value="">Double</option>
+														</select>
+													</div>
+													<div class="row gutter5">
+														<div class="col-sm-4">
+															<div class="form-group">
+																<label>Adults (+18)</label>
+																<select class="selector" style="width:100%;">
+																	<option value="">1</option>
+																	<option value="" selected>2</option>
+																	<option value="">3</option>
+																	<option value="">...</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-sm-4">
+															<div class="form-group">
+																<label>Children (0-17)</label>
+																<select class="selector" style="width:100%;">
+																	<option value="" selected>1</option>
+																	<option value="">2</option>
+																	<option value="">3</option>
+																	<option value="">...</option>
+																</select>
+															</div>
+														</div>
+													</div>
+													<div class="row gutter5">
+														<div class="col-sm-4">
+															<div class="form-group">
+																<label>Child 1 Age</label>
+																<select class="selector" style="width:100%;">
+																	<option value="">1</option>
+																	<option value="">2</option>
+																	<option value="">3</option>
+																	<option value="">4</option>
+																	<option value="">5</option>
+																	<option value="" selected>6</option>
+																	<option value="">...</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-sm-4">
+															<div class="form-group">
+																<label>Child 1 Age</label>
+																<select class="selector" style="width:100%;">
+																	<option value="">1</option>
+																	<option value="">2</option>
+																	<option value="">3</option>
+																	<option value="">4</option>
+																	<option value="">5</option>
+																	<option value="" selected>6</option>
+																	<option value="">...</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-sm-4">
+															<div class="form-group">
+																<label>Child 1 Age</label>
+																<select class="selector" style="width:100%;">
+																	<option value="">1</option>
+																	<option value="">2</option>
+																	<option value="">3</option>
+																	<option value="">4</option>
+																	<option value="">5</option>
+																	<option value="" selected>6</option>
+																	<option value="">...</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<button type="submit" class="btn btn-block btn-purple arrow-right">FIND HOTELS</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+	<div class="container">
+		<div class="footer-menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Terms and Conditions</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</div>
+		<div class="footer-rights">
+			Copyright &copy; 2016 <a href="#">www.hoteleverlink.com</a>. All rights reserved.
+		</div>
+	</div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.plugins.js"></script>
+<script src="js/custom.js"></script>
+<script>
+$(document).ready(function(){
+
+	'use strict';
+
+	$('#dateCheckin,#dateCheckout').on('focus',function(){
+		$(this).closest('.has-icon').addClass('dropdown-open');
+		$('.dropdown-room').removeClass('open');
+	});
+
+	$('#dateCheckin,#dateCheckout').datepick({
+		alignment: 'top',
+		onSelect: customRange,
+		minDate: $.datepick.today(),
+		monthsToShow: 2,
+		changeMonth: false,
+		popupContainer: '.calendardaten',
+		nextText: '',
+		prevText: '',
+		showAnim: '',
+		onClose: function() {
+			$('.has-icon').removeClass('dropdown-open');
+		}
+	});
+
+});
+
+function customRange(dates) { 
+    if (this.id == 'dateCheckin') { 
+        $('#dateCheckout').datepick('option', 'minDate', dates[0] || null);
+    } else {
+        $('#dateCheckin').datepick('option', 'maxDate', dates[0] || null); 
+    }
+}
+</script>
+
+</body>
+</html>

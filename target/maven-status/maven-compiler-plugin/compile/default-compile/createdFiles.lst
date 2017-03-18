@@ -1,0 +1,3 @@
+com\hotelbooking\config\DaoConfig.class
+com\hotelbooking\config\AppInterceptor.class
+com\hotelbooking\controller\IndexController.class
