@@ -1,0 +1,5 @@
+HTML Changes
+
+1- Add 
+ontouchstart="this.classList.toggle('hover');" 
+to .flip-container class where you use the flip box.
