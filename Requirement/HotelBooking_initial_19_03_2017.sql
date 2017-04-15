@@ -113,5 +113,61 @@ ALTER TABLE hotel_facility ADD CONSTRAINT fk_hotel_facilty_id FOREIGN KEY (hotel
 ALTER TABLE hotel_facility ADD CONSTRAINT fk_facilty_id FOREIGN KEY (facility_id) REFERENCES facilties(facility_id);
 
 
+// 15-04-2017
+
+
+CREATE TABLE IF NOT EXISTS hotel_admin(
+admin_id BIGINT(11) NOT NULL AUTO_INCREMENT,
+admin_unique_id VARCHAR(255) NOT NULL,
+admin_username VARCHAR(255) NOT NULL,
+admin_email VARCHAR(255) NOT NULL,
+admin_password VARCHAR(255) NOT NULL,
+admin_name VARCHAR(255) NOT NULL,
+admin_contact_no_1 VARCHAR(255) NOT NULL,
+admin_contact_no_2 VARCHAR(255) NOT NULL,
+admin_contact_no_3 VARCHAR(255) NOT NULL,
+admin_is_verified TINYINT(3) NOT NULL,
+admin_secret_question TEXT,
+admin_secret_answer TEXT,
+admin_secondary_email VARCHAR(255) NOT NULL,
+admin_website_url VARCHAR(255) NOT NULL,
+db_add_date DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+db_update_date DATETIME NOT NULL,
+PRIMARY KEY (admin_id)
+)
+
+CREATE TABLE IF NOT EXISTS admin_hotels(
+admin_hotel_id BIGINT(11) NOT NULL AUTO_INCREMENT,
+admin_id BIGINT(11) NOT NULL,
+hotel_id BIGINT(11) NOT NULL,
+is_active INT(3) NOT NULL DEFAULT 0 COMMENT '0=> Active , 1=>In-Active',
+db_add_date DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+db_update_date DATETIME NOT NULL, 
+PRIMARY KEY (admin_hotel_id)
+)
+
+CREATE TABLE IF NOT EXISTS admin_social_networks(
+admin_social_id BIGINT(11) NOT NULL AUTO_INCREMENT,
+admin_id BIGINT(11) NOT NULL,
+hotel_id BIGINT(11) NOT NULL,
+social_network_name VARCHAR(255) NOT NULL,
+social_network_url VARCHAR(255) NOT NULL,
+is_active INT(3) NOT NULL DEFAULT 0 COMMENT '0=> Active , 1=>In-Active',
+db_add_date DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+db_update_date DATETIME NOT NULL, 
+PRIMARY KEY (admin_social_id)
+)
+
+
+
+
+ALTER TABLE admin_hotels ADD CONSTRAINT fk_admin_id FOREIGN KEY (admin_id) REFERENCES hotel_admin(admin_id);
+ALTER TABLE admin_hotels ADD CONSTRAINT fk_admin_hotel_id FOREIGN KEY (hotel_id) REFERENCES hotel_info(hotel_id);
+
+
+ALTER TABLE admin_social_networks ADD CONSTRAINT fk_social_admin_id FOREIGN KEY (admin_id) REFERENCES hotel_admin(admin_id);
+ALTER TABLE admin_social_networks ADD CONSTRAINT fk_social_hotel_id FOREIGN KEY (hotel_id) REFERENCES hotel_info(hotel_id);
+
+
 
 
