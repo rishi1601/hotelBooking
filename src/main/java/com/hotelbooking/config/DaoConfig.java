@@ -32,7 +32,7 @@ public class DaoConfig {
 		LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
 		sessionFactory.setDataSource(dataSource());
 		sessionFactory.setHibernateProperties(hibernateProperties());
-		sessionFactory.setPackagesToScan("com.jobseeker1.models");
+		sessionFactory.setPackagesToScan("com.hotelbooking.model");
 		return sessionFactory;
 
 	}
